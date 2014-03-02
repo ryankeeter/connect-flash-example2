@@ -1,0 +1,26 @@
+{>"layouts/master" /}
+
+
+{<body}
+    {?flash}
+        {#flash}
+            {?error}
+                {#error}
+                    <h4 class="error-text" style="color: red; " >{.}</h4>
+                {/error}
+            {/error}
+            {?info}
+                {#info}
+                        <h4 class="info-text" style="color: blue;" >{.}</h4>
+                {/info}
+            {/info}
+        {/flash}
+    {/flash}
+    <h1>Testing Connect Flash</h1>
+    <div>
+        <a href="errorMessage" >Make an Error Message</a>
+    </div>
+    <div>
+        <a href="infoMessage" >Make an Info Message</a>
+    </div>
+{/body}

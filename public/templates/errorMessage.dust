@@ -1,0 +1,16 @@
+{?flash}
+    {#flash}
+        {?error}
+            {#error}
+                <h4 class="error-text" style="color: red;" >{.}</h4>
+            {/error}
+        {/error}
+        {?info}
+            {#info}
+                    <h4 class="info-text" style="color: blue;" >{.}</h4>
+            {/info}
+        {/info}
+    {/flash}
+{/flash}
+
+<h1>I am the Error Page</h1>
